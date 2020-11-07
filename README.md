@@ -2,6 +2,24 @@
 
 Simple bringup/verification software for an [Eater](https://eater.net/6502) 6502 computer.
 
+## Install tools
+
+Install vasm (assembler).  On Arch Linux:
+
+    git clone https://aur.archlinux.org/vasm.git
+    cd vasm
+    makepkg -i
+
+Install minipro (EEPROM programmer).  On Arch Linux:
+
+    git clone https://aur.archlinux.org/srecord.git
+    cd srecord
+    makepkg -i
+    cd ..
+    git clone https://aur.archlinux.org/minipro-git.git
+    cd minipro-git
+    makepkg -i
+
 ## Build
 
 Clone the fab build system and the 6502 project:
@@ -13,3 +31,7 @@ Build:
 
     cd 6502-bringup
     make
+
+## Software
+
+* build/bringup/nop.s.o - 32 KiB of no-ops
