@@ -20,6 +20,10 @@ Install minipro (EEPROM programmer).  On Arch Linux:
     cd minipro-git
     makepkg -i
 
+Install arduino-cli.  On Arch Linux:
+
+    pacman -S arduino-cli
+
 ## Build
 
 Clone the fab build system and the 6502 project:
@@ -35,3 +39,4 @@ Build:
 ## Software
 
 * build/bringup/nop.s.o - 32 KiB of no-ops
+* src/monitor/monitor.sh - Arduino-based address and data bus monitor
