@@ -40,3 +40,4 @@ Build:
 
 * build/bringup/nop.s.o - 32 KiB of no-ops
 * src/monitor/monitor.sh - Arduino-based address and data bus monitor
+* build/bringup/hello-world-no-ram.s.o - hello world (no RAM required)
