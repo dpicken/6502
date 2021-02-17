@@ -38,7 +38,18 @@ Build:
 
 ## Software
 
-* build/bringup/nop.s.o - 32 KiB of no-ops
-* src/monitor/monitor.sh - Arduino-based address and data bus monitor
-* build/bringup/hello-world-no-ram.s.o - hello world (no RAM required)
-* build/bringup/hello-world.s.o - hello world (RAM required)
+### Arduino-based address and data bus monitor
+
+    src/monitor/monitor.sh
+
+### 32 KiB of no-ops
+
+    minipro -p AT28C256 -w build/bringup/nop.s.o
+
+### Hello world (no RAM required)
+
+    minipro -p AT28C256 -w build/bringup/hello-world-no-ram.s.o
+
+### Hello world (RAM required)
+
+    minipro -p AT28C256 -w build/bringup/hello-world.s.o
